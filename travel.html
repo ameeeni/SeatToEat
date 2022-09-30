@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style link-->
+    <link rel="stylesheet" href="assets/css/travelstyle.css">
+    <!--Normalizing link-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- font Style link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <!--Bundle swiper link-->
+    <title>SeatToEat</title>
+</head>
+
+<body>
+    <!--Starting Header -->
+    <div class="header">
+        <div class="container">
+            <a href="" class="logo">Sea<span>To</span>Eat</a>
+            <ul class="menu">
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#dishes">
+                    <li>Dishes</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#menu">
+                    <li>Menu</li>
+                </a>
+                <a href="#order">
+                    <li>Order</li>
+                </a>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass" id="search-id"></i>
+                <i class="fa-solid fa-user" id="id-login"></i>
+                <i class="fa fa-bars toggle"></i>
+            </div>
+            <div class="form">
+                <input type="search" id="search-bar" placeholder="search here ...">
+                <i class="fa-solid fa-magnifying-glass" id="search-id-1"></i>
+            </div>
+        </div>
+    </div>
+    <!--Ending  Header -->
+    <!-- Start the Login part-->
+    <div class="auth-bloc">
+        <i class="fa-solid fa-xmark close"></i>
+        <form action="connect.php" class="form" id="login" method="POST">
+            <h3 class="form-title">Login</h3>
+            <div class="form-message form-error-message"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username or Email :">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password :">
+                <div class="input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a href="" class="form-link">Forget your password ?</a>
+            </p>
+            <p class="form-text">
+                <a href="" class="form-link" id="CreateAccountForm">Don't have An Account? Create one </a>
+            </p>
+        </form>
+        <form action="createaccount.php" method="post" class="form form-hidden" id="CreateAccount">
+            <h3 class="form-title">Create Account</h3>
+            <div class="form-message form-error-message"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username :" name="username">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="email" class="form-input" autofocus placeholder="Email: " name="email">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password: " name="password">
+                <div class="input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit" name="register">Sign In</button>
+            <p class="form-text">
+                <a href="" class="form-link" id="linkedLogin">You've already have an Account ? Login</a>
+            </p>
+        </form>
+    </div>
+    <!--End of the login part-->
+    <!--Start the home part-->
+    <div class="home">
+        <div class="container">
+            <div class="slide">
+                <div class="content selected-content">
+                    <div class="description">
+                        <h4>Our special Dishes</h4>
+                        <h2>Spicy Pasta</h2>
+                        <p>For people who Love to eat pasta.</p>
+                        <button type="submit">Order Now</button>
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/home-img-1.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="description">
+                        <h4>Our special Dishes</h4>
+                        <h2>Chicken Fried</h2>
+                        <p>Are you vegeterian ? This dish isn't for you </p>
+                        <button type="submit">Order Now</button>
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/home-img-2.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="description">
+                        <h4>Our special Dishes</h4>
+                        <h2>Mexican Pizza</h2>
+                        <p>Mexican pizza ! Good idea for people how loves to eat pizza</p>
+                        <button type="submit">Order Now</button>
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/home-img-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End the home part-->
+    <!--Start Dishes -->
+    <div class="dishes">
+        <div class="container">
+            <div class="main-title">
+                <h5 class="mini-title">Our Dishes</h5>
+                <h3>Popular Dishes</h3>
+            </div>
+            <div class="main-dishes">
+                <div class="dish-content">
+                    <img src="assets/images/dish-1.png" alt="">
+                    <h4 class="dish-name">Double cheese Burger</h4>
+                    <div class="rating-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price-info">
+                        <div class="price">15DT</div>
+                        <button type="submit" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dish-content">
+                    <img src="assets/images/dish-2.png" alt="">
+                    <h4 class="dish-name">Chicken Wings</h4>
+                    <div class="rating-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price-info">
+                        <div class="price">16DT</div>
+                        <button type="submit" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dish-content">
+                    <img src="assets/images/dish-3.png" alt="">
+                    <h4 class="dish-name">Fried Chicken</h4>
+                    <div class="rating-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price-info">
+                        <div class="price">12DT</div>
+                        <button type="submit" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dish-content">
+                    <img src="assets/images/dish-4.png" alt="">
+                    <h4 class="dish-name">Vegeterian Pizza</h4>
+                    <div class="rating-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price-info">
+                        <div class="price">11DT</div>
+                        <button type="submit" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dish-content">
+                    <img src="assets/images/dish-5.png" alt="">
+                    <h4 class="dish-name">Cookies</h4>
+                    <div class="rating-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price-info">
+                        <div class="price">7DT</div>
+                        <button type="submit" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dish-content">
+                    <img src="assets/images/dish-6.png" alt="">
+                    <h4 class="dish-name">Chicken with KFC recipe</h4>
+                    <div class="rating-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price-info">
+                        <div class="price">18DT</div>
+                        <button type="submit" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Dishes-->
+    <!-- Start About us -->
+    <div class="about">
+        <div class="container">
+            <div class="main-title">
+                <h5 class="mini-title">About us</h5>
+                <h3>Why choose us ?</h3>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="assets/images/about-img.png" alt="">
+                </div>
+                <div class="about-info">
+                    <h1>Best Food in The Country</h1>
+                    <p>Seat to eat is now the most popular website in Tunisia , we deliver food to all the regions of the country, fast services the food will be delievred in an hour free. We are present for you 24/7.You're Welcome any time anywhere.</p>
+                    <div class="about-services">
+                        <div><i class="fas fa-shipping-fast"></i> Free Delievery</div>
+                        <div><i class="fa-solid fa-dollar-sign"></i> Easy payement</div>
+                        <div><i class="fa-solid fa-headphones-simple"></i> 24/7 services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End About us -->
+    <!--Start Menu -->
+    <div class="menu-dishes">
+        <div class="container">
+            <div class="main-title">
+                <h5 class="mini-title">Our Menu</h5>
+                <h3>Today's Speciality</h3>
+            </div>
+            <div class="menu-content">
+                <div class="menu-item">
+                    <img src="assets/images/menu-1.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Peperoni Pizza</h3>
+                        <p>Peperoni pizza with a lot of cheese</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">13DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/menu-2.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Burger Beef</h3>
+                        <p> Burger with with minced beef and Cheese</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">14DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/menu-3.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Frensh crepe </h3>
+                        <p>Frensh with Honey huzlenut and a lot of blueberry</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">10DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/menu-4.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3> Choclate Gauffre</h3>
+                        <p>Choclate Gauffre with Vanilla Ice Cream</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">10DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/menu-5.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>English Brownies</h3>
+                        <p> English Brownies with Mealty Choclate and blueberry</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">12DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/menu-6.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Cap Cake</h3>
+                        <p>Childen Cap Cake with blue Vanilla Cream</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">10DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/menu-7.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Fresh Summer Cocktail</h3>
+                        <p>Fresh Summer Cocktail with Mango and Lemon juice.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">9DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/menu-8.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Healthy Granola</h3>
+                        <p>Healthy granola For Our Jock Customers</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">9DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/menu-9.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Orange Juice</h3>
+                        <p>Orange Juice for Morning people.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">5DT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Menu-->
+    <!--Start order-->
+    <div class="order">
+        <div class="container">
+            <div class="main-title">
+                <h5 class="mini-title">Order Now</h5>
+                <h3>Free and Fast</h3>
+            </div>
+            <form action="" class="order-form">
+                <div class="inputBox">
+                    <div class="input-order-group">
+                        <label for="">Your Name :</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Your order :</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">How Much ?</label>
+                        <input type="number" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Your Adress :</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input-order-group">
+                        <label for="">Number :</label>
+                        <input type="tel" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Additional Food /Drinks :</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Date :</label>
+                        <input type="datetime" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Your Message :</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--End Order-->
+
+
+
+    <script src="travel.js"></script>
+</body>
+
+
+</html>
