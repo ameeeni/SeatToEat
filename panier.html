@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style link-->
+    <link rel="stylesheet" href="assets/css/travelstyle.css">
+    <!--Normalizing link-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- font Style link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=+DeLexendca:wght@100;200;300;400;500;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!--Bundle swiper link-->
+    <title>Panier</title>
+</head>
+
+<body>
+    <!--Starting Header -->
+    <div class="header">
+        <div class="container">
+            <a href="" class="logo">AN<span>N</span>ON</a>
+            <ul class="menu">
+                <a href="#home">
+                    <li>Accueil</li>
+                </a>
+                <a href="categories.html" target="_blank">
+                    <li>Catégories</li>
+                </a>
+                <a href="#about">
+                    <li>Panier</li>
+                </a>
+                <a href="#menu">
+                    <li>Administration</li>
+                </a>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass" id="search-id"></i>
+                <i class="fa-solid fa-user" id="id-login"></i>
+                <i class="fa fa-bars toggle"></i>
+            </div>
+            <div class="form">
+                <input type="search" id="search-bar" placeholder="search here ...">
+                <i class="fa-solid fa-magnifying-glass" id="search-id-1"></i>
+            </div>
+        </div>
+    </div>
+    <!--Ending  Header -->
+    <!-- Start the Login part-->
+    <div class="auth-bloc">
+        <i class="fa-solid fa-xmark close"></i>
+        <form action="connect.php" class="form" id="login" method="POST">
+            <h3 class="form-title">Login</h3>
+            <div class="form-message form-error-message"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username or Email :">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password :">
+                <div class="input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a href="" class="form-link">Forget your password ?</a>
+            </p>
+            <p class="form-text">
+                <a href="" class="form-link" id="CreateAccountForm">Don't have An Account? Create one </a>
+            </p>
+        </form>
+        <form action="createaccount.php" method="post" class="form form-hidden" id="CreateAccount">
+            <h3 class="form-title">Create Account</h3>
+            <div class="form-message form-error-message"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username :" name="username">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="email" class="form-input" autofocus placeholder="Email: " name="email">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password: " name="password">
+                <div class="input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit" name="register">Sign In</button>
+            <p class="form-text">
+                <a href="" class="form-link" id="linkedLogin">You've already have an Account ? Login</a>
+            </p>
+        </form>
+    </div>
+    <!--End of the login part-->
+    <!--End Menu-->
+    <!--Start order-->
+    <div class="order">
+        <div class="container">
+            <div class="main-title">
+                <h5 class="mini-title">Mes achats</h5>
+                <h3>Livraison gratuite et Facile</h3>
+            </div>
+            <div class="cart">
+                <div class="cart-item-container">
+                    
+                 </div>
+                 <div class="cart-total">
+                    <button class="btn-checkout">Continuer</button>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End Order-->
+
+    <script src="panier.js"></script>
+
+</body>
+
+
+
+</html>

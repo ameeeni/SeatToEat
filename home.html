@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style link-->
+    <link rel="stylesheet" href="assets/css/travelstyle.css">
+    <!--Normalizing link-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- font Style link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <!--Bundle swiper link-->
+    <title>Accueil</title>
+</head>
+
+<body>
+    <!--Starting Header -->
+    <div class="header">
+        <div class="container">
+            <a href="" class="logo">AN<span>N</span>ON</a>
+            <ul class="menu">
+                <a href="#home">
+                    <li>Accueil</li>
+                </a>
+                <a href="categories.html" target="_blank">
+                    <li>Catégories</li>
+                </a>
+                <a href="panier.html">
+                    <li>Panier</li>
+                </a>
+                <a href="#menu">
+                    <li>Administration</li>
+                </a>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass" id="search-id"></i>
+                <i class="fa-solid fa-user" id="id-login"></i>
+                <i class="fa fa-bars toggle"></i>
+            </div>
+            <div class="form">
+                <input type="search" id="search-bar" placeholder="search here ...">
+                <i class="fa-solid fa-magnifying-glass" id="search-id-1"></i>
+            </div>
+        </div>
+    </div>
+    <!--Ending  Header -->
+    <!-- Start the Login part-->
+    <div class="auth-bloc">
+        <i class="fa-solid fa-xmark close"></i>
+        <form action="connect.php" class="form" id="login" method="POST">
+            <h3 class="form-title">Login</h3>
+            <div class="form-message form-error-message"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username or Email :">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password :">
+                <div class="input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a href="" class="form-link">Forget your password ?</a>
+            </p>
+            <p class="form-text">
+                <a href="" class="form-link" id="CreateAccountForm">Don't have An Account? Create one </a>
+            </p>
+        </form>
+        <form action="createaccount.php" method="post" class="form form-hidden" id="CreateAccount">
+            <h3 class="form-title">Create Account</h3>
+            <div class="form-message form-error-message"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username :" name="username">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="email" class="form-input" autofocus placeholder="Email: " name="email">
+                <div class="input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password: " name="password">
+                <div class="input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit" name="register">Sign In</button>
+            <p class="form-text">
+                <a href="" class="form-link" id="linkedLogin">You've already have an Account ? Login</a>
+            </p>
+        </form>
+    </div>
+    <!--End of the login part-->
+    <!--Start the home part-->
+    <div class="home">
+        <div class="container">
+            <div class="slide">
+                <div class="content selected-content">
+                    <div class="description">
+                        <h4>Our special Catégories</h4>
+                        <!-- <h2>Sweat</h2> -->
+                        <p>For people who Love Fashion.</p>
+                        <button type="submit">Order Now</button>
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/blog-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="description">
+                        <h4>Our special Catégories</h4>
+                        <!-- <h2>Chicken Fried</h2> -->
+                        <p>For people who Love Fashion.</p>
+                        <button type="submit">Order Now</button>
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/blog-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="description">
+                        <h4>Our special Catégories</h4>
+                        <!-- <h2>Mexican Pizza</h2> -->
+                        <p>For people who Love Fashion.</p>
+                        <button type="submit">Order Now</button>
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/blog-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End the home part-->
+  
+    <!-- Start About us -->
+    <div class="about">
+        <div class="container">
+            <div class="main-title">
+                <h5 class="mini-title">About us</h5>
+                <h3>Why choose us ?</h3>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="assets/images/newsletter.png" alt="">
+                </div>
+                <div class="about-info">
+                    <h1>Best Online shop in The Country</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, alias Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit.</p>
+                    <div class="about-services">
+                        <div><i class="fas fa-shipping-fast"></i> Free Delievery</div>
+                        <div><i class="fa-solid fa-dollar-sign"></i> Easy payement</div>
+                        <div><i class="fa-solid fa-headphones-simple"></i> 24/7 services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End About us -->
+    <!--Start Menu -->
+    <div class="menu-dishes">
+        <div class="container">
+            <div class="main-title">
+                <h5 class="mini-title">Our Best Seller</h5>
+                <h3>Today's Speciality</h3>
+            </div>
+            <div class="menu-content">
+                <div class="menu-item">
+                    <img src="assets/images/shoe-1.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Sports Shoe</h3>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">13DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/shorts-1.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Shorts</h3>
+                        <p> Lorem ipsum dolor sit.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">14DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/sports-1.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Sport shoes </h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">10DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/shirt-1.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3> shirt</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">10DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/clothes-2.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Girly shirt</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">12DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/sports-6.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Shoe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">10DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/clothes-3.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Skirt</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">9DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/jacket-4.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Jacket</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu">Add to cart</button>
+                            <div class="price">9DT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/images/shoe-5.jpg" alt="">
+                    <div class="menu-info">
+                        <div class="rating-icons">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>Shoe</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="menu-price">
+                            <button type="submit" class="btn-menu" onclick="displayCartItem()">Add to cart</button>
+                            <div class="price">5DT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Menu-->
+    <!--Start order-->
+    <div class="order">
+        <div class="container">
+            <div class="main-title">
+                <h5 class="mini-title">Order Now</h5>
+                <h3>Free and Fast</h3>
+            </div>
+            <form action="" class="order-form">
+                <div class="inputBox">
+                    <div class="input-order-group">
+                        <label for="">Your Name :</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Your order :</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">How Much ?</label>
+                        <input type="number" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Your Adress :</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input-order-group">
+                        <label for="">Number :</label>
+                        <input type="tel" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Additional Food /Drinks :</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Date :</label>
+                        <input type="datetime" name="" id="">
+                    </div>
+                    <div class="input-order-group">
+                        <label for="">Your Message :</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--End Order-->
+
+
+
+    <script src="travel.js"></script>
+</body>
+
+
+</html>

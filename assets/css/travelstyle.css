@@ -910,7 +910,7 @@ li {
 
 /*Start Order*/
 
-.order {
+/* .order {
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
 }
@@ -948,7 +948,86 @@ li {
 .order .container .order-form .inputBox .input-order-group label {
     font-weight: bold;
     color: var(--main-second-color-bl);
+} */
+/* Add these styles for the cart page */
+.cart {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: #eee;
 }
+
+.cart .cart-item-container {
+    width: 100%;
+}
+
+.cart .cart-item-container .cart-items {
+    margin-top: 50px;
+    display: flex; /* Use flex container for column layout */
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center items horizontally in the column */
+}
+
+.cart .cart-item-container .cart-items .cart-item {
+    background-color: var(--main-third-color-wh);
+    max-width: 300px;
+    padding: 15px;
+    position: relative;
+    max-height: 600px;
+    transition: var(--main-transation);
+    -webkit-transition: var(--main-transation);
+    -moz-transition: var(--main-transation);
+    -ms-transition: var(--main-transation);
+    -o-transition: var(--main-transation);
+    margin-bottom: 20px; /* Add margin between cart items */
+}
+
+.cart h2 {
+    color: var(--main-second-color-bl);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cart-item img {
+    width: 100%;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-total p {
+    color: var(--main-second-color-bl);
+    font-size: 20px;
+}
+
+.btn-checkout {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: var(--main-first-color-or);
+    color: var(--main-third-color-wh);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+    transition: var(--main-transation);
+    -webkit-transition: var(--main-transation);
+    -moz-transition: var(--main-transation);
+    -ms-transition: var(--main-transation);
+    -o-transition: var(--main-transation);
+}
+
+.btn-checkout:hover {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    letter-spacing: 5px;
+}
+
 
 @media (max-width:767px) {
     .order .container .order-form {

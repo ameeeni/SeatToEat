@@ -75,3 +75,20 @@ document.querySelectorAll('.home').forEach(home => {
         });
     });
 });
+document.querySelectorAll('.menu-item').forEach(function(menuItem) {
+    menuItem.addEventListener('click', function(e) {
+        e.preventDefault();
+        var name = this.querySelector('h3').innerText; 
+        var price = this.querySelector('.price').innerText;
+        var imageSrc = this.querySelector('img').src;
+        var storedProducts = JSON.parse(localStorage.getItem('products')) || [];
+        var newProduct = {
+            name: name,
+            price: price,
+            image: imageSrc
+        };
+        storedProducts.push(newProduct);
+        localStorage.setItem('products', JSON.stringify(storedProducts));
+    });
+});
+
