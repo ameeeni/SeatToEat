@@ -92,3 +92,36 @@ document.querySelectorAll('.menu-item').forEach(function(menuItem) {
     });
 });
 
+function handleLogin() {
+    var usernameInput = document.querySelector('#name');
+    var passwordInput = document.querySelector('#password');
+
+    if (usernameInput && passwordInput) {
+        var username = usernameInput.value;
+        var password = passwordInput.value;
+
+        console.log('Username:', username);
+        console.log('Password:', password);
+
+        if (username === 'admin' && password === 'admin') {
+            console.log('Redirecting to administration.html');
+            window.location.href = 'administration.html';
+        } else {
+            alert('Invalid username or password. Please try again.');
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var loginForm = document.querySelector('#login');
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        handleLogin(); 
+    });
+
+    var continueButton = document.querySelector('.form-button');
+    continueButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        handleLogin(); 
+    });
+});
